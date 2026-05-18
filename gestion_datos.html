@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <script>
+      const products = {
+        producto1 : {
+        id : 1025,
+        nombre : 'sello rojo 20g',
+        precio : 1500 },
+        producto2 :{
+        id: 1132,
+        nombre : 'refisal 500g',
+        precio : 2000},
+
+      } 
+
+      // agregar un numero a set
+      const lista = new Set([1025,1032,1045,1045,1045,1025,1032,6010,]);
+      console.log(lista);
+      lista.add(1999);
+      console.log(lista)
+
+      //veficar si un numero existe
+      const lista_1 = new Set([1025,1032,1045,1045,1045,1025,1032,6010,]);
+      console.log(lista_1);
+      lista_1.has(1045)
+      console.log(lista_1)
+
+      // eliminar un numero de un Set
+      const lista_2 = new Set([1025,1032,1045,1045,1045,1025,1032,6010,])
+      console.log(lista_2);
+      lista_2.delete(1025);
+      console.log(lista_2);
+
+      for (const valor of lista_2){
+        console.log(valor);
+      }
+
+      // creacion de un map
+      const productos1 = new Map([
+        [1025,
+        {'nombre' : 'sello rojo 20g',
+        'precio' : 1500,
+        'cantidad': 25,
+        'categoria': 'bebida caliente'}],
+
+        [ 1132,
+        {'nombre' : 'refisal 500g',
+        'precio' : 2000,
+        'cantidad': 32,
+        'categoria': 'condimento'}],
+      ]);
+
+      console.log(productos1);
+      // iteracion
+      // for ... in
+      
+      for (let i in products ){
+          let p = products;
+        } console.log(products.producto1);
+         console.log(products.producto2);
+
+      // for of
+      
+      for (let i of lista_1){
+      } console.log(lista_1);
+
+      //for each()
+      productos1.forEach((valor, clave) => {
+          console.log(clave, valor.nombre, valor.precio, valor.cantidad);
+      })
+
+      // valdaciones
+      console.log("---- validar objeto ------")
+      for ( let p in products){
+      } console.log(products.producto1 + products.producto2);
+      
+
+
+
+      // set validaciones
+      console.log('-----validar Set------')
+      console.log(lista_1);
+      console.log(lista_2);
+
+      // map
+      console.log('------validar Map-----')
+      productos1.forEach((valor,clave) => {
+        console.log(clave, valor.nombre, valor.categoria, );
+      })
+    </script>
+
+</body>
+</html>
