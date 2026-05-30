@@ -1,0 +1,57 @@
+/ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Título de la página</title>
+</head>
+<body>
+    <h1>Mi pagina</h1>
+    <h3>actividad semana 3</h3>
+    <input id="name" type="text">
+    <button id="boton">add </button>
+    <ul id="listaNotas"></ul>
+    <script>
+        const name = document.getElementById("name");
+let lista = document.getElementById("listaNotas");
+const boton = document.getElementById("boton");
+
+function add() {
+
+    if (name.value.trim() === "") {
+        console.log("vacio");
+        name.focus();
+        return;
+    }
+
+    let li = document.createElement("li");
+    li.textContent = name.value + " ";
+
+    const eliminar = document.createElement("button");
+    eliminar.textContent = "eliminar";
+    eliminar.id = "btn-delete";
+    eliminar.style.background = "red";
+    eliminar.style.color = "white";
+
+    eliminar.addEventListener("click", function () {
+        li.remove();
+    });
+
+    li.appendChild(eliminar);
+    lista.appendChild(li);
+
+    name.value = "";
+    name.focus();
+}
+
+boton.addEventListener("click", add);
+
+const notas = ["Tarea 1", "Tarea 2"];
+
+localStorage.setItem("lista", JSON.stringify(notas));
+
+const recuperadas = JSON.parse(localStorage.getItem("lista"));
+
+console.log(recuperadas);
+    </script>
+</body>
+</html>
