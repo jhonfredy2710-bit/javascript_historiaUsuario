@@ -1,0 +1,89 @@
+{
+  "listas": [
+    {
+      "producto": "",
+      "cantidad": "",
+      "precio": "",
+      "id": ""
+    },
+    {
+      "producto": "",
+      "cantidad": "",
+      "precio": "",
+      "id": "rylMnR0aHIw"
+    },
+    {
+      "producto": "1",
+      "cantidad": "1",
+      "precio": "1",
+      "id": "S-xGCHtez0k"
+    },
+    {
+      "producto": "",
+      "cantidad": "",
+      "precio": "",
+      "id": "KH-ahUmqeCA"
+    },
+    {
+      "producto": "",
+      "cantidad": "",
+      "precio": "",
+      "id": "YKOEM0a6PSo"
+    },
+    {
+      "producto": "arroz diana",
+      "cantidad": "30",
+      "precio": "2500",
+      "id": "DlvUMQZ1bWM"
+    },
+    {
+      "producto": "",
+      "cantidad": "",
+      "precio": "",
+      "id": "DK-IDh6M1sM"
+    },
+    {
+      "producto": "",
+      "cantidad": "",
+      "precio": "",
+      "id": "U3luvgQFPOM"
+    },
+    {
+      "producto": "",
+      "cantidad": "",
+      "precio": "",
+      "id": "DQjyQVrZB6w"
+    },
+    {
+      "producto": "jhon",
+      "cantidad": "4",
+      "precio": "4",
+      "id": "SlTOMY50R3g"
+    },
+    {
+      "id": "tag10PTuZjk",
+      "producto": "1",
+      "cantidad": "1",
+      "precio": "1"
+    },
+    {
+      "id": "XS_rABSo74M",
+      "producto": "",
+      "cantidad": "",
+      "precio": ""
+    },
+    {
+      "id": "cGbe5BBVPa8",
+      "producto": "",
+      "cantidad": "",
+      "precio": ""
+    },
+    {
+      "id": "PH9ap3MN8Ps",
+      "producto": "1",
+      "cantidad": "1",
+      "precio": "1"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
